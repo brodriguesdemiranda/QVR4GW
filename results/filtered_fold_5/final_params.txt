@@ -1,0 +1,10 @@
+start
+{'alphas': tensor([[[4.6029, 3.9295, 2.4042],
+         [1.1099, 4.9804, 0.5676]],
+
+        [[4.7415, 5.3791, 4.3714],
+         [4.7211, 4.8074, 1.9872]],
+
+        [[3.5218, 3.3350, 5.0553],
+         [1.4151, 3.8825, 1.5880]]], requires_grad=True), 'mus': tensor([2.5834, 0.9177, 3.9259], requires_grad=True), 'sigmas': tensor([1.5265, 3.0922, 4.2787], requires_grad=True), 'eta_0': tensor(-0.0118, requires_grad=True)}
+end

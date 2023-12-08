@@ -1,0 +1,13 @@
+{'alphas': tensor([[[1.4538, 4.5188, 5.6189],
+         [3.4278, 2.7727, 4.7389]],
+
+        [[4.0123, 5.1727, 1.9470],
+         [2.6929, 1.5193, 2.6836]],
+
+        [[4.4179, 5.4422, 2.4522],
+         [1.9033, 4.0365, 3.8254]]], requires_grad=True), 'mus': tensor([4.2287, 2.1682, 5.0443], requires_grad=True), 'sigmas': tensor([1.5756, 3.0322, 2.4481], requires_grad=True), 'eta_0': tensor(0.4344, requires_grad=True)}
+
+Optimization terminated successfully.
+         Current function value: 0.507242
+         Iterations: 3
+         Function evaluations: 1552

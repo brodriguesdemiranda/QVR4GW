@@ -1,0 +1,9 @@
+training with fifth unfiltered fold
+{'alphas': tensor([[[4.2312, 5.1867, 3.9790],
+         [0.3398, 1.2701, 5.7208]],
+
+        [[2.7008, 1.1157, 1.9209],
+         [4.3438, 0.4574, 1.1759]],
+
+        [[1.0138, 4.9683, 5.5084],
+         [2.9366, 0.3126, 1.3909]]], requires_grad=True), 'mus': tensor([5.4784, 1.6745, 3.6443], requires_grad=True), 'sigmas': tensor([1.5183, 4.0253, 3.3993], requires_grad=True), 'eta_0': tensor(-0.9861, requires_grad=True)}

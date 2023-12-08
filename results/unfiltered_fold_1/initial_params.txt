@@ -1,0 +1,10 @@
+C:\Users\rodriguesdemirandab\OneDrive - TNO\Desktop\QVR>rewinder.py
+training with unfiltered first fold
+{'alphas': tensor([[[3.6467, 1.5549, 4.6134],
+         [1.6143, 2.2558, 3.2241]],
+
+        [[0.7967, 3.0719, 2.1269],
+         [5.9246, 2.6380, 5.8628]],
+
+        [[4.0570, 4.3603, 2.6278],
+         [2.8118, 2.1707, 2.1422]]], requires_grad=True), 'mus': tensor([4.2132, 3.6862, 4.6124], requires_grad=True), 'sigmas': tensor([0.5810, 2.6455, 2.8959], requires_grad=True), 'eta_0': tensor(0.4719, requires_grad=True)}

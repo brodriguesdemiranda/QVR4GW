@@ -1,0 +1,13 @@
+start
+{'alphas': tensor([[[2.4085, 3.7489, 5.5500],
+         [1.4322, 2.0879, 4.5584]],
+
+        [[2.3931, 1.4898, 2.3358],
+         [4.5997, 4.7211, 2.0498]],
+
+        [[2.4000, 2.8647, 4.2334],
+         [4.2334, 2.3188, 2.9086]]], requires_grad=True), 'mus': tensor([4.8120, 3.9251, 3.8674], requires_grad=True), 'sigmas': tensor([4.0146, 2.1705, 1.8678], requires_grad=True), 'eta_0': tensor(-0.1903, requires_grad=True)}
+end
+
+c:\users\rodri\desktop\qvr_alt\qvr_alt\pytorch-minimize\pytorch_minimize\optim.py:116: RuntimeWarning: Maximum number of function evaluations has been exceeded.
+  return minimize(func, x0, **minimizer_args)

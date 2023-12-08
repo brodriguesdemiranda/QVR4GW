@@ -1,0 +1,7 @@
+Non-anomalous signal:
+	anomaly score: 0.008190350609817392
+	quantum time: 496 seconds
+
+Anomalous signal:
+	anomaly score: 0.027876872413685
+	quantum time: 499 seconds
