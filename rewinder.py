@@ -67,8 +67,6 @@ def get_anomaly_expec(x: np.array, t: float, D: torch.tensor, alpha: torch.tenso
 	:return expval: The expected value of the circuit output.
 	Simulate the circuit with a single data point and calculate the expected value.
 	"""
-	print(x)
-	sys.exit(2)
 	embed_func(x, wires=wires, **embed_func_params)
 	transform_func(alpha, wires, **transform_func_params)
 	diag_func(D*t, n_qubits, k=k)
