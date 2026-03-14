@@ -161,7 +161,7 @@ def get_training_cycler(Xtr: torch.Tensor, batch_size: int, seed: int=GLOBAL_SEE
 	data_getter = utils.DataGetter(Xtr, batch_size, seed)
 	return data_getter
 
-def create_diagonal_circuit(gammas: torch.Tensor, n_qubits: int, k: int=None) -> None:  # !! simple_rewinder assumes this method is called D
+def create_diagonal_circuit(gammas: torch.Tensor, n_qubits: int, k: int=None)
 	"""
 	:param gammas: The diagonal entries of D.
 	:param n_qubits: The number of qubits in the circuit.
@@ -245,6 +245,12 @@ def load_data_from_file(path):
 	return data
 
 def save_to_file(data, path, copy=0):
+	"""
+	Saves the specified data.
+	:param data: Data to be saved.
+	:param path: Where to save the data:
+	:param copy: Number of copies for which an attempt was made to save them under the same name.
+	"""
 	if copy > 100:
 		print("over 100 models are saved, consider deleting some")
 	if os.path.isfile(path):
@@ -259,14 +265,18 @@ def save_to_file(data, path, copy=0):
 		pathlib.Path(os.path.abspath(path)).parent.mkdir(parents=True, exist_ok=True)
 		pickle.dump(data, open(os.path.abspath(path), "wb"))
 
-def rescale(data: torch.tensor):
+def rescale(data: torch.tensor) -> torch.tensor:
+	"""
+	Rescale the data per time stamp. That is, vertically.
+	:param data: Data to be rescalled.
+	"""
 	epsillon = 0.01  # A value to distinguish negative pi from positive pi.
 	newMin = -torch.pi+epsillon
 	newMax = torch.pi-epsillon
-	for seriesNo in range(data.shape[2]):
-		series = data[:, 0, seriesNo]
+	for timeStamp in range(data.shape[2]):
+		series = data[:, 0, timeStamp]
 		oldMin = np.min(series)
 		oldMax = np.max(series)
 		series = (series-oldMin)/(oldMax-oldMin)*(newMax-newMin)+newMin
-		data[:, 0, seriesNo] = series
+		data[:, 0, timeStamp] = series
 	return data

@@ -622,7 +622,7 @@ tuning_save_path = "results/tuning_results.pkl"
 training_results = pickle.load(open(training_save_path, "rb"))
 events = torch.from_numpy(utils.rescale(utils.load_data_from_file(anom_path)))
 print("tuning")
-noise_val = noise[3000:3078]
+noise_val = noise[2000:2078]
 events_val = events
 tuning_results = threshold_tuning_workflow(Xte_non_anom=noise_val, Xte_anom=events_val, threshold_grid_steps=1000,
                                           penalty=penalty, taus=taus, results_dict=training_results,
@@ -633,7 +633,7 @@ utils.save_to_file(tuning_results, tuning_save_path)
 
 testing_save_path = "results/testing_results.pkl"
 print("testing")
-noise_test = noise[3078:3156]
+noise_test = noise[2078:2156]
 events_test = events
 tuning_results = pickle.load(open(tuning_save_path, "rb"))
 testing_results = testing_workflow(Xte_non_anom=noise_test, Xte_anom=events_test, penalty=penalty,
